@@ -24,6 +24,12 @@ h1, h2, h3 {
   margin: 0.5em 0;
 }
 
+/* 強調 */
+.highlight {
+  color: #333; /* テキストの色を黒に設定 */
+ font-weight: bold; /* テキストを太字に設定 */
+}
+
 /* ナビゲーション */
 nav {
   background-color: #333;
