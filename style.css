@@ -207,3 +207,25 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
+
+/* スマートフォン版の商品一覧 */
+@media (max-width: 600px) {
+  .container1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item1 {
+    margin-bottom: 20px;
+    padding: 10px; /* アイテムの内側のパディングを追加 */
+  }
+
+  .item1 h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .item1 p {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+}
