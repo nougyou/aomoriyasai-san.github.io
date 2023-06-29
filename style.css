@@ -17,12 +17,14 @@ body {
 }
 
 /* タイトル */
-h1, h2, h3 {
+h1, h2 {
   font-family: "Georgia", serif;
   font-weight: bold;
   color: #555;
   margin: 0.5em 0;
 }
+
+
 
 /* 強調 */
 .intro-text {
@@ -84,7 +86,11 @@ nav ul li a:hover {
 
 /* 販売中でない商品のスタイル */
 .item1.not-available {
+  font-size: 0.9em;
+  margin: 10px;
+  color: rgb(109, 108, 158);
   opacity: 0.5;
+  font-weight: bold;
 }
 
 /* 商品一覧の各アイテム */
@@ -98,11 +104,14 @@ nav ul li a:hover {
   margin: 10px;
 }
 
+/* PC版での中央配置 */
 .item1 h3 {
   font-size: 1.2em;
   font-weight: bold;
   margin: 10px 0;
+  text-align: center; /* 追加 */
 }
+
 
 .item1 img {
   width: 100%;
@@ -202,7 +211,7 @@ footer {
 }
 
 /* 画面の幅が 601px 以上の場合にスタイルを適用 */
-@media (min-width: 601px) {
+@media (min-width: 600px) {
   .container1 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -220,8 +229,10 @@ footer {
   }
 
   .item1 h3 {
-    font-size: 1em;
-    margin-bottom: 5px;
+      font-size: 1em;
+      margin-bottom: 5px;
+      word-wrap: break-word; /* 追加 */
+      overflow-wrap: break-word; /* 追加 */
   }
 
   .item1 p {
