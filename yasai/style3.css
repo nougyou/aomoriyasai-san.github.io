@@ -1,0 +1,91 @@
+/* ヘッダー */
+header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+nav a {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+/* ボディー */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* 強調するテキスト */
+p em {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/* 本文 */
+p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-container .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+/* フッター */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+/* スマートフォン向けスタイル */
+@media (max-width: 600px) {
+  .image-container .images {
+    flex-direction: column;
+  }
+  
+  .image-container img {
+    max-height: none;
+    margin-bottom: 10px;
+  }
+}
