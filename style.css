@@ -37,15 +37,15 @@ h1, h2, .navbar h1 {
 }
 
 .navbar ul li a {
-  color: white;
+  color: #B3FF1A;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
 }
 
 a.active, a:hover {
-  background: linear-gradient(90deg, rgba(2, 0, 2, 0.21) 40%, rgba(0, 242, 255, 0.238) 100%);
-  color: #ffffff;
+  background: #AABC05;
+  color: #f7eec3;
   font-weight: 100;
   transition: .5s; 
   box-shadow: 1px 1px 1px 1px rgba(2, 2, 92, 0.354);
