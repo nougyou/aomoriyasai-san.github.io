@@ -17,11 +17,12 @@ body {
 }
 
 /* タイトル */
-h1, h2, .navbar h1 {
+ h2, .navbar h1 {
   font-family: "Georgia", serif;
   font-weight: bold;
   color: #555;
   margin: 0.5em 0;
+  
 }
 /* チェックボタン */
 #check {
@@ -156,6 +157,8 @@ header {
 
 header h1 {
   font-size: 2rem;
+  display: grid;
+  place-items: center;
 }
 
 /* メインコンテンツ */
