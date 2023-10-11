@@ -23,6 +23,14 @@ h1, h2, .navbar h1 {
   color: #555;
   margin: 0.5em 0;
 }
+/* チェックボタン */
+#check {
+  display: none;
+}
+
+.navbar .checkbtn{
+  background-color:#b3ffcf;
+}
 
 /* ナビゲーション */
 .navbar ul {
