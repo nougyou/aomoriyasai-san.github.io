@@ -22,8 +22,12 @@ body {
   font-weight: bold;
   color: #555;
   margin: 0.5em 0;
-  
 }
+
+/* h3にした波線 */
+.seotext_04 {
+  background:linear-gradient(transparent 85%, #affa8f 0%);
+  }
 
   
 /* チェックボタン */
