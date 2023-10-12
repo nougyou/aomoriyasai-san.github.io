@@ -17,27 +17,49 @@ body {
 }
 
 /* タイトル */
- h2, .navbar h1 {
+ h2 {
   font-family: "Georgia", serif;
   font-weight: bold;
   color: #555;
   margin: 0.5em 0;
   
 }
+
+  
 /* チェックボタン */
 #check {
   display: none;
 }
 
-.navbar .checkbtn{
-  background-color:#b3ffcf;
-}
 
 /* ナビゲーション */
-.navbar ul {
-  float: right;
-  margin-right: 20px;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;  /* この行を追加 */
+  margin-top: -10px;
 }
+
+.navbar h1 {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #555;
+  margin: 0.5em 0;
+  text-align: center;
+
+}
+
+.navbar ul {
+  position: absolute;   /* この行を追加 */
+  right: 0;             /* この行を追加 */
+  bottom: 0;            /* この行を追加 */
+  display: flex;
+  align-items: center;   /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+  height: 0px;  
+}
+
 
 .navbar ul li {
   display: inline-block;
@@ -155,12 +177,6 @@ header {
   text-align: center;
 }
 
-header h1 {
-  font-size: 2rem;
-  display: grid;
-  place-items: center;
-}
-
 /* メインコンテンツ */
 main {
   max-width: 960px;
@@ -246,19 +262,23 @@ footer a:hover {
     font-size: 16px;
   }
 
-  .checkbtn {
-    display: block;
-  }
+  .navbar .checkbtn {
+    position: fixed;  /* この行を追加 */
+    left: 0;          /* この行を追加 */
+    top: 15px;        /* 必要に応じて上の位置を調整してください */
+    z-index: 1000;    /* 必要に応じて他の要素の上に表示させるためのz-indexを設定 */
+}
 
-  ul {
+  .navbar ul {  
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #000000b6;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all .5s;
+    display: inline-block;  /* この行を変更 */
   }
 
   .navbar ul li {
@@ -266,6 +286,7 @@ footer a:hover {
     margin: 50px 0;
     line-height: 30px;
   }
+  
 
   .navbar ul li a {
     font-size: 20px;
@@ -285,4 +306,8 @@ footer a:hover {
   .container1 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+  .navbar .checkbtn{
+    display: none;
+  }
 }
+
