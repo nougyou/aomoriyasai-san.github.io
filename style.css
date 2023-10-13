@@ -265,12 +265,19 @@ footer a:hover {
   .navbar ul li a {
     font-size: 16px;
   }
-
+  .navbar .size{
+    font-size:1.5em; /*1.5倍にする*/
+  }
   .navbar .checkbtn {
     position: fixed;  /* この行を追加 */
     left: 0;          /* この行を追加 */
     top: 15px;        /* 必要に応じて上の位置を調整してください */
     z-index: 1000;    /* 必要に応じて他の要素の上に表示させるためのz-indexを設定 */
+}
+/* 表示されているチェックボタンのサイズ */
+.fas.fa-bars {
+  font-size: 30px;
+  color: #050505;
 }
 
   .navbar ul {  
