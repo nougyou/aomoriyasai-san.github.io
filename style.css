@@ -125,6 +125,16 @@ nav ul li a:hover {
   color: #ccc;
 }
 
+/* 販売終了の広告 */
+.announcement {
+  background-color: #fffae6; /* やさしい背景色 */
+  border-left: 5px solid #ffcc00; /* 左側のボーダー */
+  padding: 15px; /* 内側の余白 */
+  margin: 20px 0; /* 外側の余白 */
+  font-size: 1.1em; /* 文字の大きさ */
+}
+
+
 /* 商品一覧 */
 .container1 {
   display: grid;
